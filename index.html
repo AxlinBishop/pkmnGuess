@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Friends-End menos una">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Adivina el Pokémon</title>
+</head>
+
+<body>
+    <div>
+        <div class="dflex">
+            <h1 class="quienes">¿Quién es éste pokémon?</h1>
+            <h1 class="puntaje">Puntaje:</h1>
+            <h1 id="puntaje"></h1>
+        </div>
+        <section id="pkmnToGuess">
+            <div id="guessBG">
+                <img id="pkmnImage" class="opacar" src="" alt="">
+            </div>
+        </section>
+
+        <section id="pkmnGuesser">
+            <label>
+                <input id="pkmnElegido" list="pkmn">
+            </label>
+            <datalist id="pkmn">
+                <!-- rellenar en js con la info del json -->
+            </datalist>
+            <div class="btn-group">
+                <div class="btn ball">
+                    <div><button id="adivinar" class=""><a>Adivina <span data-letters="Vamos!"></span><span
+                                    data-letters="Vamos!"></span></a></button></div>
+                </div>
+            </div>
+            <button id="siguienteRonda" class='ocultar'>Siguiente</button>
+            <button id="volverIntentar" class="ocultar">Volver a intentar</button>
+
+        </section>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
